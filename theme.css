@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body {
+    background-color: #1B1725;
+    color: white;
+    font-family: "Roboto Condensed", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.icons {
+    display: flex;
+    margin-top: 60px;
+    background-color: #191D32;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.icons h2,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.pull-up-bar-image {
+    display: flex;
+    justify-content: end;
+}
+
+#text-box {
+    background-color: #191D32;
+    display: flex;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex: 1;
+}
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.icons a::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #191D32;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 58px;
+    margin: 0 auto;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0;
+}
+
+body#register .icons a#register-link::after {
+    opacity: 1;
+}
