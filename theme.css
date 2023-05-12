@@ -25,6 +25,7 @@ body {
     background-color: #191D32;
     justify-content: space-evenly;
     color: white;
+    position: relative;
 }
 
 .icons h2,
@@ -36,6 +37,7 @@ a {
 .socials {
     display: flex;
     flex-direction: row;
+    gap: 18px;
 }
 
 .pull-up-bar-image {
@@ -47,6 +49,20 @@ a {
     background-color: #191D32;
     display: flex;
     width: 100%;
+}
+
+#text-box label {
+    display: flex;
+    flex-direction: column;
+}
+
+#text-box form {
+    display: flex;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+    gap: 22px;
+    flex-direction: column;
 }
 
 .main-container {
@@ -76,6 +92,50 @@ a {
     opacity: 0;
 }
 
-body#register .icons a#register-link::after {
+body#register .icons a#register-link::after,
+body#equipment .icons a#equipment-link::after,
+body#contact-us .icons a#contact-link::after,
+body#supplements .icons a#supplements-link::after {
     opacity: 1;
+}
+
+.image-of-supplements {
+    margin-top: 46px;
+}
+
+body#supplements .icons::after {
+    content: "";
+    width: 100%;
+    height: 32px;
+    background-color: #191D32;
+    position: absolute;
+    top: 89px;
+}
+
+.register-title {
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: #DE0707;
+    color: white;
+}
+
+.submit {
+    font-weight: 600;
+    border: none;
+    margin-top: 18px;
+}
+
+#text-box input {
+    border: none;
 }
