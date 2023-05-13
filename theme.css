@@ -139,3 +139,15 @@ body#supplements .icons::after {
 #text-box input {
     border: none;
 }
+
+body#contact-us #text-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+body#home #text-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
