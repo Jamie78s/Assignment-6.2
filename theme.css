@@ -151,3 +151,16 @@ body#home #text-box {
     flex-direction: column;
     font-size: 25px;
 }
+
+body#equipment #text-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+}
+
+body#supplements #text-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-top: 25px;
+}
